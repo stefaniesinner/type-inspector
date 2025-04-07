@@ -5,8 +5,9 @@
     <vendor>stefaniesinner</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>Pythonid</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-
+        <statusBarWidgetFactory implementation="com.github.stefaniesinner.typeinspector.statusBar.TypeInspectorFactory"/>
     </extensions>
 </idea-plugin>
