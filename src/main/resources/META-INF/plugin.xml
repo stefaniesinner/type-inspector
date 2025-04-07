@@ -1,15 +1,14 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.stefaniesinner.typeinspector</id>
-    <name>type-inspector</name>
+    <name>Type-Inspector</name>
     <vendor>stefaniesinner</vendor>
 
     <depends>com.intellij.modules.platform</depends>
-
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <depends>Pythonid</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.stefaniesinner.typeinspector.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.stefaniesinner.typeinspector.startup.MyProjectActivity" />
+        <statusBarWidgetFactory implementation="com.github.stefaniesinner.typeinspector.statusBar.TypeInspectorFactory"
+                                id="TypeInspector"/>
     </extensions>
 </idea-plugin>
