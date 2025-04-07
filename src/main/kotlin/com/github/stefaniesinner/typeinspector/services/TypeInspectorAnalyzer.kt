@@ -59,11 +59,4 @@ class TypeInspectorAnalyzer(private val project: Project) {
         results[key] = result
         return result
     }
-
-    /**
-     * Clears all stored analysis results.
-     */
-    fun clearResults() {
-        results.clear()
-    }
 }
