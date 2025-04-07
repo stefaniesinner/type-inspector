@@ -8,6 +8,7 @@
     <depends>Pythonid</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <statusBarWidgetFactory implementation="com.github.stefaniesinner.typeinspector.statusBar.TypeInspectorFactory"/>
+        <statusBarWidgetFactory implementation="com.github.stefaniesinner.typeinspector.statusBar.TypeInspectorFactory"
+                                id="TypeInspector"/>
     </extensions>
 </idea-plugin>
